@@ -2,9 +2,8 @@ For the 2023 & 2024 seasons we used command based, before that I dont know. The 
 
 wpilib explenation of command-based programming: https://docs.wpilib.org/en/stable/docs/software/commandbased/what-is-command-based.html
 
-Pros and cons of NOT doing command-based
-
-Pros: 
+# Pros and cons of NOT doing command-based
+## Pros: 
 1. writing code is fast & easy, this is the biggest benefit of not doing command-based
 2. the style of coding used when not doing command-based is the same style that many people are already familiar with
 3. Can write code in this way without being experienced in the programming language
@@ -12,7 +11,7 @@ Pros:
 5. We can handle when things are run directly, instead of having to go through the command scheduler
 6. Extra verbose
 
-Cons: 
+## Cons: 
 1. Most teams use command-based
 2. pathplanner expects you to use command-based, using pathplanner requires extra effort
 3. A little difficult to write Auto code
@@ -20,16 +19,16 @@ Cons:
 
 
 
-Pros and cons of doing command based
+# Pros and cons of doing command based
 
-Pros:
+## Pros:
 1. plenty of examples because most teams use command-based
 2. Very easy to write Auto code / sequential code
 3. Can avoid conflicts via the command requirments
 4. Well written command-based code looks really nice
 5. Uses factory functions and lambdas to run code (makes for concise code, concise code can be easier to follow)
 
-Cons: 
+## Cons: 
 1. very hard to work with when crunched for time
 2. Command scheduler often likes to do its own thing
 3. a bit convoluted to write TeleOp code
