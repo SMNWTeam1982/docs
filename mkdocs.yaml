@@ -1,0 +1,15 @@
+site_name: Team 1982 Docs
+site_url: https://smnwteam1982.github.io/docs/
+nav:
+    - Home: index.md
+    - Programming:
+        - Getting Started: programming/getting-started.md
+    - Hardware:
+            - Preparing the Swerve Drives: hardware/swerve-drive-prep.md
+    - Philosophy:
+        - On the Importance of Documentation: philosophy/on-the-importance-of-documentation.md
+        - Programming:
+          - On Command Based Programming: philosophy/on-command-based-programming.md
+
+
+theme: readthedocs
