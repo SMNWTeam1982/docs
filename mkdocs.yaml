@@ -10,6 +10,7 @@ nav:
         - On the Importance of Documentation: philosophy/on-the-importance-of-documentation.md
         - Programming:
           - On Command Based Programming: philosophy/on-command-based-programming.md
+          - On Package Management: philosophy/on-package-management.md
 
 
 theme: readthedocs
