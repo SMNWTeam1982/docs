@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://smnwteam1982.github.io/docs/philosophy/on-command-based-programming/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>On Command Based Programming - Team 1982 Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "On Command Based Programming";
+        var mkdocs_page_input_path = "philosophy/on-command-based-programming.md";
+        var mkdocs_page_url = "/docs/philosophy/on-command-based-programming/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Team 1982 Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Programming</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../programming/getting-started/">Getting Started</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hardware</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../hardware/swerve-drive-prep/">Preparing the Swerve Drives</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Philosophy</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../on-the-importance-of-documentation/">On the Importance of Documentation</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Programming</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">On Command Based Programming</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#pros">Pros:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cons">Cons:</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Team 1982 Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Philosophy</li>
+          <li class="breadcrumb-item">Programming</li>
+      <li class="breadcrumb-item active">On Command Based Programming</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>For the 2023 &amp; 2024 seasons we used command based, before that I dont know. The code for those seasons was spagetti, Initially we tried both of those years to write the code in a command based way but as the season progressed and our goal was to just get things working, the command based stuff just got in our way and we ended up just working around the command based stuff.</p>
+<p>wpilib explenation of command-based programming: https://docs.wpilib.org/en/stable/docs/software/commandbased/what-is-command-based.html</p>
+<h1 id="pros-and-cons-of-not-doing-command-based">Pros and cons of NOT doing command-based</h1>
+<h2 id="pros">Pros:</h2>
+<ol>
+<li>writing code is fast &amp; easy, this is the biggest benefit of not doing command-based</li>
+<li>the style of coding used when not doing command-based is the same style that many people are already familiar with</li>
+<li>Can write code in this way without being experienced in the programming language</li>
+<li>very easy to write TeleOp code</li>
+<li>We can handle when things are run directly, instead of having to go through the command scheduler</li>
+<li>Extra verbose</li>
+</ol>
+<h2 id="cons">Cons:</h2>
+<ol>
+<li>Most teams use command-based</li>
+<li>pathplanner expects you to use command-based, using pathplanner requires extra effort</li>
+<li>A little difficult to write Auto code</li>
+<li>can accidentally create a conflict where 2 pieces of code tell 1 piece of hardware to do something</li>
+</ol>
+<h1 id="pros-and-cons-of-doing-command-based">Pros and cons of doing command based</h1>
+<h2 id="pros_1">Pros:</h2>
+<ol>
+<li>plenty of examples because most teams use command-based</li>
+<li>Very easy to write Auto code / sequential code</li>
+<li>Can avoid conflicts via the command requirments</li>
+<li>Well written command-based code looks really nice</li>
+<li>Uses factory functions and lambdas to run code (makes for concise code, concise code can be easier to follow)</li>
+</ol>
+<h2 id="cons_1">Cons:</h2>
+<ol>
+<li>very hard to work with when crunched for time</li>
+<li>Command scheduler often likes to do its own thing</li>
+<li>a bit convoluted to write TeleOp code</li>
+<li>hard to write code that uses multiple subsystems at the same time</li>
+<li>Uses factory functions and lambdas to run code (these are very confusing, even more for new programmers)</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../on-the-importance-of-documentation/" class="btn btn-neutral float-left" title="On the Importance of Documentation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../on-the-importance-of-documentation/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
