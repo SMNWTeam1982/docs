@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://smnwteam1982.github.io/docs/philosophy/on-the-importance-of-documentation/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://smnwteam1982.github.io/docs/philosophy/on-package-management/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>On the Importance of Documentation - Team 1982 Docs</title>
+    <title>On Package Management - Team 1982 Docs</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "On the Importance of Documentation";
-        var mkdocs_page_input_path = "philosophy/on-the-importance-of-documentation.md";
-        var mkdocs_page_url = "/docs/philosophy/on-the-importance-of-documentation/";
+        var mkdocs_page_name = "On Package Management";
+        var mkdocs_page_input_path = "philosophy/on-package-management.md";
+        var mkdocs_page_url = "/docs/philosophy/on-package-management/";
       </script>
     
     <!--[if lt IE 9]>
@@ -55,13 +55,25 @@
               </ul>
               <p class="caption"><span class="caption-text">Philosophy</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">On the Importance of Documentation</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../on-the-importance-of-documentation/">On the Importance of Documentation</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >Programming</a>
-    <ul>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Programming</a>
+    <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../on-command-based-programming/">On Command Based Programming</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../on-package-management/">On Package Management</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">On Package Management</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#pipenv-vs-pip">Pipenv vs Pip</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#pipenv-figure-1">Pipenv (Figure 1)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pip-figure-2">Pip (Figure 2)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#why-not-poetry-pdm-etc">Why not Poetry, PDM, etc?</a>
+    </li>
+    </ul>
                 </li>
     </ul>
                   </li>
@@ -81,7 +93,8 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Philosophy</li>
-      <li class="breadcrumb-item active">On the Importance of Documentation</li>
+          <li class="breadcrumb-item">Programming</li>
+      <li class="breadcrumb-item active">On Package Management</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -90,16 +103,56 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>If everyone on the team suddenly disappeared and were replaced with someone with no experience, would they be able to pick up where you left off?<br />
-would they have to learn everything from scratch?</p>
-<p>Documenting what you do and what you learn is <strong>VERY</strong> important for the success of the team.<br />
-Future members of the team should not have to go through all of the experiences that you went through to get to your knowledge level.</p>
+                <h1 id="on-package-management">On Package Management</h1>
+<p>Managing dependencies when programming is tricky, and Python doesn't make it fun. Python standardizes Pip and the way it works, but it's not terribly complex and doesn't handle more advanced concepts like Virtual Environments. It can also break packages (system installed or otherwise) very easily, and despite being usable in most cases, further extension is necessary. I have decided that an extended package manager is needed to effectively work with Python and FRC code, and so I write this to expand on what and how to use the abstractions defined in our standards.</p>
+<h2 id="pipenv-vs-pip">Pipenv vs Pip</h2>
+<p>I decided, after a little searching, that Pipenv complied with the warrants that an FRC and RobotPy project needs. In terms of functionality, Pipenv has a few things that, in my opinion, make it a little more usable for this purpose. Pipenv, among other things, uses a standard configuration to define packages and configuration for build and deploy scripts. It also automatically handles the creation and management of Virtual Environments, which prevents Robot Code and dependencies from interfering with anything else installed on any given computer. See below figure 1 and figure 2 which show the pros and cons of Pip, briefly summarized. There are many more nuances that are necessary to understand, but those are outlined in <a href="/docs/programming/pipenv">programming/pipenv</a></p>
+<h3 id="pipenv-figure-1">Pipenv (Figure 1)</h3>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Virtual Environments</td>
+<td>Much more complex than Pip</td>
+</tr>
+<tr>
+<td>Scripts in Configuration</td>
+<td>More documentation work necessary (nonstandard)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pip-figure-2">Pip (Figure 2)</h3>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simple and easy to use</td>
+<td>Can easily break system</td>
+</tr>
+<tr>
+<td>HIGHLY documented and used in RobotPy/WPI docs</td>
+<td>Lacks certain configuration features</td>
+</tr>
+</tbody>
+</table>
+<h2 id="why-not-poetry-pdm-etc">Why not Poetry, PDM, etc?</h2>
+<p>I chose Pipenv on a whim, honestly. But after reading about some features of Pipenv when compared with Poetry and some others, I found that it would have an easy enough learning curve and has sufficient features when compared with it's contemporaries in other languages (see NPM, Cargo, etc)</p>
+<p>zach is making me write this - kay</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../hardware/swerve-drive-prep/" class="btn btn-neutral float-left" title="Preparing the Swerve Drives"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../on-command-based-programming/" class="btn btn-neutral float-right" title="On Command Based Programming">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../on-command-based-programming/" class="btn btn-neutral float-left" title="On Command Based Programming"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -122,10 +175,8 @@ Future members of the team should not have to go through all of the experiences 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../hardware/swerve-drive-prep/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../on-command-based-programming/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../on-command-based-programming/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
