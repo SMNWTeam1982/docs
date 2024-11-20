@@ -4,7 +4,7 @@ wpilib explenation of command-based programming: https://docs.wpilib.org/en/stab
 
 # Pros and cons of NOT doing command-based
 ## Pros: 
-1. writing code is fast & easy, this is the biggest benefit of not doing command-based
+1. writing code is fast, this is the biggest benefit of not doing command-based
 2. the style of coding used when not doing command-based is the same style that many people are already familiar with
 3. Can write code in this way without being experienced in the programming language
 4. very easy to write TeleOp code
@@ -29,8 +29,8 @@ wpilib explenation of command-based programming: https://docs.wpilib.org/en/stab
 5. Uses factory functions and lambdas to run code (makes for concise code, concise code can be easier to follow)
 
 ## Cons: 
-1. very hard to work with when crunched for time
-2. Command scheduler often likes to do its own thing
-3. a bit convoluted to write TeleOp code
+1. Hard to work with when crunched for time
+2. Command scheduler is confusing
+3. TeleOp code can be convoluted
 4. hard to write code that uses multiple subsystems at the same time
 5. Uses factory functions and lambdas to run code (these are very confusing, even more for new programmers)
