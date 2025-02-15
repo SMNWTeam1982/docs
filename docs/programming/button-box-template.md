@@ -1,3 +1,19 @@
+# Button Box Code Template
+
+This is a general outline for creating an X-Input emulator with a Teensy Arduino Board
+
+## What you Will Need
+  - 32 Bit PJRC Teensy (or clone) with USB Support
+  - Arduino IDE with Teensyduino installed
+  - Buttons!
+
+## Code
+This code is a template from the Teensyduino library with USB Joystick support, it should work out of the box with Teensyduino. This assigns DIO pins 1-9 as X-Input buttons that should be discovered as a controller on code upload. This will work out of the box with Driver Station because it is emulating an Xbox controller.
+
+<details open>
+<summary>CPP Example Code</summary>
+
+```cpp
 //This code is in C++ and is for coding a button box using Arduino IDE 
 //As of now (2025) we are using a Teensy 3.2 Board and using Teensyduino 
 //with Arduino IDE
@@ -6,7 +22,7 @@
 //Source: https://www.partsnotincluded.com/how-to-emulate-an-xbox-controller-with-arduino-xinput/ 
 //This is a modified version of the USB_Joystick Button Example code
 
-//* Buttons to USB Joystick Example
+/* Buttons to USB Joystick Example
 
    You must select Joystick from the "Tools > USB Type" menu
 
@@ -135,3 +151,8 @@ void loop() {
     Joystick.button(9, 0);
   }
 }
+```
+</details>
+
+## Wiring
+By default, the above code uses DIO pins 1-9 on any given Teensy board, and so the buttons should be wired to a common ground (GND) on one side, and any of the pins 1-9 on the opposite contact of the button. The code automatically handles debouncing, meaning the only necessary wiring is directly from the button to ground on one side and to the DIO pin on the other side.xw

@@ -4,6 +4,14 @@ nav:
     - Home: index.md
     - Programming:
         - Getting Started: programming/getting-started.md
+        - Documentation Reference: programming/docs-reference.md
+        - Package Management with Pipenv: programming/pipenv.md
+        - Tooling: programming/tools.md
+        - Button Box Template: programming/button-box-template.md
+        - PID Tuning Reference: programming/pid-tuning-reference.md
+    - Standards:
+        - Git Usage: standards/git-usage.md
+        - Python Style Guide: standards/python-style-guide.md
     - Hardware:
             - Preparing the Swerve Drives: hardware/swerve-drive-prep.md
     - Philosophy:
@@ -11,6 +19,7 @@ nav:
         - Programming:
           - On Command Based Programming: philosophy/on-command-based-programming.md
           - On Package Management: philosophy/on-package-management.md
+          - On Documentation: philosophy/on-the-importance-of-documentation.md
 
 
 theme: readthedocs
