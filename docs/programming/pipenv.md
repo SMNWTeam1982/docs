@@ -10,7 +10,7 @@ As our projects depend on Pipenv for local dependency management on development 
   The Team 1982 programming computers are already properly configured for use with <code>pipenv</code>, but in the event that you want to use a personal device or need to reprovision the programming computers for any reason, the following guide should work.
   <h4>Install Python</h4>
   RobotPy requires a modern version of Python to function, as does pipenv. If you do not already have Python <code>>=3.12</code> installed on your system, you may skip this step. If you need to install Python on your system, first open <a href="https://python.org/downloads">the Python download page</a> and download te most recent version of Python 3.12 and follow through the installation steps. When installing, ensure the following boxes are checked if you reach an 'Optional Features' screen. (If you do not see this, look for an 'Advanced' or 'Customize installation' button.)
-  <img src="/images/python-installer-options.png">
+  <img src="/docs/images/python-installer-options.png">
   Also ensure that an option for 'Add python.exe to path' is checked as it will make life easier down the line. Beyond this, the installation should be successful and you can move on to installing pipenv itself.
   <h4>Installing Pipenv</h4>
   Although not recommended, we make use of a system-wide installation of pipenv for managing our dependencies, meaning that you must ask pip to break system packages during the install. This sounds more scary than it is, as we will not be using the system pip install anymore. Open a powershell prompt and run 
