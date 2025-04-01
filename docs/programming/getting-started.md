@@ -7,6 +7,3 @@ Prior to reading this, you should familiarize yourself with [Pipenv](/docs/progr
 
 ## Initialize your Codebase
 Likely, you will be starting from something already, but this is assuming you aren't. For example, the [swerve-template](https://github.com/smnwteam1982/swerve-template) project which contains the basis of a swerve drive style drivetrain in Python. If you are not starting from a template, you will likely need to initialize the repository with `pipenv`. I will not document this here unless it becomes necessary, but the basic idea of creating a Git Repository from scratch and installing dependencies with `pipenv` is straightforward.
-
-
-Written by Kay, last updated 2/8/2025

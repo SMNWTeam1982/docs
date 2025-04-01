@@ -1,5 +1,7 @@
 site_name: Team 1982 Docs
 site_url: https://smnwteam1982.github.io/docs/
+repo_url: https://github.com/smnwteam1982/docs/
+repo_name: 'GitHub'
 nav:
     - Home: index.md
     - Programming:
@@ -12,6 +14,7 @@ nav:
     - Standards:
         - Git Usage: standards/git-usage.md
         - Python Style Guide: standards/python-style-guide.md
+        - Documentation Styling & Best Practices: standards/documentation-style-guide.md
     - Hardware:
             - Preparing the Swerve Drives: hardware/swerve-drive-prep.md
     - Philosophy:
@@ -22,4 +25,14 @@ nav:
           - On Documentation: philosophy/on-the-importance-of-documentation.md
 
 
-theme: readthedocs
+theme:
+  name: readthedocs
+  color_mode: dark
+  user_color_mode_toggle: true
+  highlightjs: true
+
+plugins:
+  - search
+  - git-revision-date-localized
+  - git-authors
+  - obsidian-bridge

@@ -81,5 +81,3 @@ The Test command runs the `pyfrc` test suite on the project to validate everythi
 
 ## References
 1. [Homebrew installation page](https://brew.sh)
-
-Written by Kay, last updated 2/8/2025
